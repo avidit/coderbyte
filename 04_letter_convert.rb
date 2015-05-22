@@ -15,4 +15,4 @@ def letter_changer(str)
   str.join
 end
 
-puts letter_changer(STDIN.gets)
+letter_changer(STDIN.gets)

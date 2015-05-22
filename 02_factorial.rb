@@ -7,3 +7,5 @@ def fact(num)
   (num <= 1) ? 1 : (1...num).each { |i| num = i * num }
   num
 end
+
+fact(STDIN.gets)

@@ -8,11 +8,9 @@
 
 def letter_changer(str)
   alphabet = ('a'..'z').to_a
-  vowels = ["a","e","i","o","u"]
+  vowels = %w(a e i o u)
   str = str.split('')
-  str = str.map{|letter| alphabet.include?(letter.downcase) ? letter.next : letter}
-  str = str.map{|letter| vowels.include?(letter.downcase) ? letter.upcase : letter}
+  str = str.map { |letter| alphabet.include?(letter.downcase) ? letter.next : letter }
+  str = str.map { |letter| vowels.include?(letter.downcase) ? letter.upcase : letter }
   str.join
 end
-
-letter_changer(STDIN.gets)

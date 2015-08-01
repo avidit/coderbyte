@@ -5,7 +5,5 @@
 # Ignore punctuation and assume sen will not be empty.
 
 def longest_word(sen)
-  sen.downcase.scan(/\w+/).max_by {|word| word.length}
+  sen.downcase.scan(/\w+/).max_by { |word| word.length }
 end
-
-longest_word(STDIN.gets)

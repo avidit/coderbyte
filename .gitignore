@@ -1,0 +1,10 @@
+
+# irb
+.irb-history
+
+# RubyMine
+.idea
+
+# MacOS
+.DS_Store
+__MACOSX
